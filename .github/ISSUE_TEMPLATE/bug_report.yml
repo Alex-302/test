@@ -246,9 +246,9 @@ body:
     label: Environment
     description: |
       examples:
-        - **OS**: 
-        - **Node**: 
-        - **npm**: 
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
     value: |
         - OS:
         - Node:
