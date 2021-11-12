@@ -183,6 +183,14 @@ body:
       required: true
 
   - type: dropdown
+    id: filters_tst
+    attributes:
+      multiple: true
+      options:
+        - aaa
+        - bbb
+
+  - type: dropdown
     id: stealth
     attributes:
       label: What filters do you have enabled?
