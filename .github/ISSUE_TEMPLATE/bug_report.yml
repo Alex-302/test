@@ -110,22 +110,22 @@ body:
       multiple: true
       options:
         - ---AdGuard filters---
-        - AdGuard Russian filter
         - AdGuard Base filter
-        - AdGuard Tracking Protection filter
-        - AdGuard Social Media filter
-        - AdGuard Experimental filter
+        - AdGuard Mobile Ads filter
+        - AdGuard Dutch filter
+        - AdGuard French filter
         - AdGuard German filter
         - AdGuard Japanese filter
-        - AdGuard Dutch filter
+        - AdGuard Russian filter
         - AdGuard Spanish/Portuguese filter
-        - Filter unblocking search ads and self-promotion
-        - AdGuard Mobile Ads filter
         - AdGuard Turkish filter
+        - AdGuard Tracking Protection filter
+        - AdGuard URL Tracking filter
+        - AdGuard Social Media filter
         - AdGuard Annoyances filter
         - AdGuard DNS filter
-        - AdGuard French filter
-        - AdGuard URL Tracking filter
+        - AdGuard Experimental filter
+        - Filter unblocking search ads and self-promotion
         - ---Third-party filters---
         - EasyList
         - ABPindo
