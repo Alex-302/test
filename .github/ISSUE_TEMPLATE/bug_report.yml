@@ -4,6 +4,26 @@ description: File a bug report
 labels: ["A: Invalid"]
 # labels: ["A: Bug", "A: By Design", "A: Cannot reproduce", "A: Closed", "A: In progress", "A: Invalid", "A: Problematic", "A: Rejected", "A: Resolved", "A: Won't fix", "Extra", "Extra (zmc)", "Infrastructure", "N: AdGuard Browser Extension", "N: AdGuard Content Blocker", "N: AdGuard DNS", "N: AdGuard for Android", "N: AdGuard for iOS", "N: AdGuard for Mac", "N: AdGuard for Safari", "N: AdGuard for Windows", "N: Other", "NSFW", "P1: Critical", "P2: High", "P3: Medium", "P4: Low", "T: Ads", "T: Annoyance", "T: Anti Adblock Script", "T: Incorrect Blocking", "T: Popups", "T: Social Widget", "T: Stealth Mode issue", "T: Tracker"]
 body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To rule out invalid issues, confirm and check each one of the checkboxes.
+        If [disabling uBO](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-large-power-button) makes the issue go away, then in all likelihood this is a filter issue.
+        See [what the logger reports](https://github.com/gorhill/uBlock/wiki/The-logger) reports when you reproduce the issue, this will help you determine whether this is a filter issue.
+        If the issue is still present after wholly disabling uBO in the browser, then the issue is unrelated to uBO.
+      options:
+        - label: I verified that this is not a filter issue (MUST be reported at [filter issue tracker](https://github.com/uBlockOrigin/uAssets/issues))
+          required: true
+        - label: This is not a [support issue or a question](https://old.reddit.com/r/uBlockOrigin/)
+          required: true
+        - label: I performed a [cursory search of the issue tracker](https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue) to avoid opening a duplicate issue
+          required: true
+        - label: The issue is not present after wholly disabling uBlock Origin ("uBO") in the browser
+          required: true
+        - label: I checked the [documentation](https://github.com/gorhill/uBlock/wiki) to understand that the issue I report is not a normal behavior
+          required: true
+
   - type: dropdown
     id: adguards
     attributes:
