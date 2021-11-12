@@ -1,7 +1,8 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: ["A: Bug", "A: By Design", "A: Cannot reproduce", "A: Closed", "A: In progress", "A: Invalid", "A: Problematic", "A: Rejected", "A: Resolved", "A: Won't fix", "Extra", "Extra (zmc)", "Infrastructure", "N: AdGuard Browser Extension", "N: AdGuard Content Blocker", "N: AdGuard DNS", "N: AdGuard for Android", "N: AdGuard for iOS", "N: AdGuard for Mac", "N: AdGuard for Safari", "N: AdGuard for Windows", "N: Other", "NSFW", "P1: Critical", "P2: High", "P3: Medium", "P4: Low", "T: Ads", "T: Annoyance", "T: Anti Adblock Script", "T: Incorrect Blocking", "T: Popups", "T: Social Widget", "T: Stealth Mode issue", "T: Tracker"]
+# title: "[Bug]: "
+labels: ["A: Invalid"]
+# labels: ["A: Bug", "A: By Design", "A: Cannot reproduce", "A: Closed", "A: In progress", "A: Invalid", "A: Problematic", "A: Rejected", "A: Resolved", "A: Won't fix", "Extra", "Extra (zmc)", "Infrastructure", "N: AdGuard Browser Extension", "N: AdGuard Content Blocker", "N: AdGuard DNS", "N: AdGuard for Android", "N: AdGuard for iOS", "N: AdGuard for Mac", "N: AdGuard for Safari", "N: AdGuard for Windows", "N: Other", "NSFW", "P1: Critical", "P2: High", "P3: Medium", "P4: Low", "T: Ads", "T: Annoyance", "T: Anti Adblock Script", "T: Incorrect Blocking", "T: Popups", "T: Social Widget", "T: Stealth Mode issue", "T: Tracker"]
 body:
   - type: dropdown
     id: adguards
@@ -20,6 +21,7 @@ body:
         - Other ad blocker
     validations:
       required: true
+
   - type: input
     id: version
     attributes:
@@ -28,6 +30,7 @@ body:
       placeholder: ex. 7.7
     validations:
       required: true
+
   - type: dropdown
     id: what-happened
     attributes:
@@ -44,6 +47,7 @@ body:
         - Dangerous site
     validations:
       required: true
+
   - type: dropdown
     id: browsers
     attributes:
@@ -60,6 +64,7 @@ body:
         - the problem is with app, not a site
     validations:
       required: true
+
   - type: dropdown
     id: browsers_type
     attributes:
@@ -70,6 +75,7 @@ body:
         - Mobile
     validations:
       required: true
+
   - type: input
     id: url
     attributes:
@@ -78,6 +84,7 @@ body:
       placeholder: ex. https://example.com/
     validations:
       required: true
+
   - type: dropdown
     id: url_nsfw
     attributes:
@@ -88,6 +95,7 @@ body:
         - Site is NSFW
     validations:
       required: true
+
   - type: dropdown
     id: filters
     attributes:
@@ -181,6 +189,7 @@ body:
         - Legitimate URL Shortener
     validations:
       required: true
+
   - type: dropdown
     id: stealth
     attributes:
@@ -226,7 +235,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: privacy
+      label: Privacy
       description: By submitting this issue, you agree that report does not contain private info
       options:
         - label: I agree to follow this condition
