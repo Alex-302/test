@@ -204,13 +204,16 @@ body:
   - type: textarea
     id: comment
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Add your comment
+      description: |
+      Please describe the issue extensively unless it is absolutely clear from the screenshot what the problem is. 
+      You can also indicate any other information that you think the developers should know.
+    render: shell
+
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
+      label: privacy
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
         - label: I agree to follow this project's Code of Conduct
