@@ -226,18 +226,6 @@ body:
         - Hide your IP address (specify in comment below, if used custom value)
 
   - type: textarea
-    attributes:
-      label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: |
-        1. In this environment...
-        2. With this config...
-        3. Run '...'
-        4. See error...
-    validations:
-      required: false
-
-  - type: textarea
     id: comments
     attributes:
       label: Add your comment and screenshots
@@ -249,6 +237,11 @@ body:
 
         Warning: Please remove private info before upload screenshots!
       render: shell
+      placeholder: |
+        1. Your comment
+        2. Screenshots
+        `<details> paste screenshot here </details>`
+        `<details> paste screenshot here </details>`
     validations:
       required: true
 
