@@ -95,7 +95,90 @@ body:
       description: Select enabled filters from the list or enter URLs of any custom filters in comment below.
       multiple: false
       options:
-        - fff
+        - ### AdGuard filters ###
+        - AdGuard Russian filter
+        - AdGuard Base filter
+        - AdGuard Tracking Protection filter
+        - AdGuard Social Media filter
+        - AdGuard Experimental filter
+        - AdGuard German filter
+        - AdGuard Japanese filter
+        - AdGuard Dutch filter
+        - AdGuard Spanish/Portuguese filter
+        - Filter unblocking search ads and self-promotion
+        - AdGuard Mobile Ads filter
+        - AdGuard Turkish filter
+        - AdGuard Annoyances filter
+        - AdGuard DNS filter
+        - AdGuard French filter
+        - AdGuard URL Tracking filter
+        - ### Third-party filters ###
+        - EasyList
+        - ABPindo
+        - Bulgarian list
+        - EasyList China
+        - EasyList Czech and Slovak
+        - EasyList Dutch
+        - EasyList Germany
+        - EasyList Hebrew
+        - EasyList Italy
+        - EasyList Lithuania
+        - Latvian List
+        - Liste AR
+        - Liste FR
+        - ROList
+        - EasyPrivacy
+        - Icelandic ABP List
+        - AdBlockID
+        - Greek AdBlock Filter
+        - Fanboy's Annoyances
+        - Fanboy's Social Blocking List
+        - Web Annoyances Ultralist
+        - Thai Ads Filters
+        - Hungarian filter
+        - Peter Lowe's Blocklist
+        - Xfiles
+        - Adblock Warning Removal List
+        - Online Malicious URL Blocklist
+        - Spam404
+        - RU AdList - Counters
+        - ABPVN List
+        - Fanboy's Enhanced Tracking List
+        - Official Polish filters for AdBlock, uBlock Origin & AdGuard
+        - Polish GDPR-Cookies Filters
+        - Estonian List
+        - ChinaList+EasyList
+        - CJX's Annoyances List
+        - Polish Social Filters
+        - Adblock-Persian list
+        - Fanboy's Swedish
+        - AdGuard Chinese filter
+        - Fanboy's Anti-Facebook List
+        - Fanboy's Vietnamese
+        - List-KR
+        - xinggsf
+        - I don't care about cookies
+        - Fanboy's Spanish\/Portuguese
+        - EasyList Spanish
+        - KAD - Anti-Scam
+        - Adblock List for Finland
+        - ROLIST2
+        - Iranian filter
+        - road-block
+        - Polish Annoyances Filters
+        - Polish Anti Adblock Filters
+        - Fanboy's Anti-thirdparty Fonts
+        - BarbBlock
+        - EasyList Cookie List
+        - NoCoin Filter List
+        - Frellwit's Swedish Filter
+        - YousList
+        - AlleBlock
+        - EasyList Polish
+        - Polish Anti-Annoying Special Supplement
+        - Dandelion Sprout's Nordic Filters
+        - Dandelion Sprout's Annoyances List
+        - Legitimate URL Shortener
     validations:
       required: true
 
