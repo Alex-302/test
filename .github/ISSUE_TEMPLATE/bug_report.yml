@@ -241,12 +241,3 @@ body:
         - label: I agree to follow this condition
           required: true
 
-- type: textarea
-  attributes:
-    label: Environment
-    description: |
-      examples:
-        - **OS**:
-    value: |
-        - OS:
-    render: markdown
