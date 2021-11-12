@@ -4,6 +4,21 @@ description: File a bug report
 labels: ["A: Invalid"]
 # labels: ["A: Bug", "A: By Design", "A: Cannot reproduce", "A: Closed", "A: In progress", "A: Invalid", "A: Problematic", "A: Rejected", "A: Resolved", "A: Won't fix", "Extra", "Extra (zmc)", "Infrastructure", "N: AdGuard Browser Extension", "N: AdGuard Content Blocker", "N: AdGuard DNS", "N: AdGuard for Android", "N: AdGuard for iOS", "N: AdGuard for Mac", "N: AdGuard for Safari", "N: AdGuard for Windows", "N: Other", "NSFW", "P1: Critical", "P2: High", "P3: Medium", "P4: Low", "T: Ads", "T: Annoyance", "T: Anti Adblock Script", "T: Incorrect Blocking", "T: Popups", "T: Social Widget", "T: Stealth Mode issue", "T: Tracker"]
 body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To avoid invalid reports, check and confirm following checkboxes.
+        It is highly recommended to use our [Web Reporting Tool](https://kb.adguard.com/en/technical-support/reporting-tool) instead or opening an issue using GitHub directly.
+      options:
+        - label: Filters were updated before redroduced an issue;
+          required: true
+        - label: AdGuard product version is up-to-date;
+          required: true
+        - label: Browser version is up-to-date;
+          required: true
+        - label: If the site or app is broken, disabling AdGuard protection resolves an issue.
+          required: true
   - type: dropdown
     id: adguards
     attributes:
