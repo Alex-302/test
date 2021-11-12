@@ -21,12 +21,11 @@ body:
         - AdGuard for Windows
         - Other ad blocker
   - type: input
-  
-    id: contact
+    id: version
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: AdGuard version
+      description: Please enter the version of the product you are using.
+      placeholder: ex. 7.7
     validations:
       required: false
   - type: textarea
