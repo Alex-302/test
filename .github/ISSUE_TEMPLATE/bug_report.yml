@@ -212,8 +212,7 @@ body:
     id: comments
     attributes:
       label: Add your comment
-      description: |
-        Please
+      description: Please
       render: shell
     validations:
       required: true
