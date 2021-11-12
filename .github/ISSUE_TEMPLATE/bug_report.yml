@@ -57,6 +57,7 @@ body:
         - Opera
         - Yandex Browser
         - other(specify in comment below)
+        - the problem is with app, not a site
     validations:
       required: true
   - type: dropdown
@@ -73,7 +74,7 @@ body:
     id: url
     attributes:
       label: Where did you encounter the problem?
-      description: Please copy address of the page or download link of the affected app.
+      description: Please enter address of the page or download link of the affected app.
       placeholder: ex. https://example.com/
     validations:
       required: true
@@ -87,8 +88,6 @@ body:
         - Site is NSFW
     validations:
       required: true
-
-
   - type: dropdown
     id: filters
     attributes:
@@ -182,7 +181,6 @@ body:
         - Legitimate URL Shortener
     validations:
       required: true
-
   - type: dropdown
     id: stealth
     attributes:
