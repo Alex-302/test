@@ -67,23 +67,8 @@ body:
       label: Where did you encounter the problem?
       description: Please copy address of the page or download link of the affected app.
       placeholder: ex. https://example.com/
-    validations:
+      validations:
       required: true
-
-
-  - type: dropdown11
-    id: what-happened11
-    attributes:
-      label: What type of problem have you encountered?
-      multiple: true
-      options:
-        - Missed ads or ad leftovers
-        - Website or app doesn't work properly
-        - AdGuard gets detected on a website
-        - Social media buttons — share, like, tweet, etc.
-        - Annoyances — pop-ups, cookie warnings, etc.
-        - Missed analytics or tracker
-        - Dangerous site
 
   - type: textarea
     id: logs
