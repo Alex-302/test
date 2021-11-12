@@ -59,7 +59,7 @@ body:
       options:
         - Desktop
         - Mobile
-      validations:
+    validations:
       required: true
   - type: input
     id: url
@@ -67,7 +67,7 @@ body:
       label: Where did you encounter the problem?
       description: Please copy address of the page or download link of the affected app.
       placeholder: ex. https://example.com/
-      validations:
+    validations:
       required: true
 
   - type: textarea
