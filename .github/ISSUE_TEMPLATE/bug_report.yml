@@ -77,8 +77,8 @@ body:
       label: Is this site contains sexually explicit material?
       multiple: false
       options:
-        - YES
-        - NO
+        - YES1
+        - NO1
     validations:
       required: true
 
