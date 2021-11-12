@@ -1,15 +1,27 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+labels: ["label_1", "label_N"]
+
+
 body:
-  - type: markdown
+  - type: dropdown
+    id: adguards
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      label: What product do you use?
+      multiple: true
+      options:
+        - AdGuard Browser Extension
+        - AdGuard Content Blocker
+        - AdGuard DNS
+        - AdGuard for Android
+        - AdGuard for iOS
+        - AdGuard for Mac
+        - AdGuard for Safari
+        - AdGuard for Windows
+        - Other ad blocker
   - type: input
+  
     id: contact
     attributes:
       label: Contact Details
