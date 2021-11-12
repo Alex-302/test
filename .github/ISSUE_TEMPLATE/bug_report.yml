@@ -32,6 +32,7 @@ body:
     id: what-happened
     attributes:
       label: What type of problem have you encountered?
+      description: Please describe what happened.
       multiple: true
       options:
         - Missed ads or ad leftovers
