@@ -71,6 +71,17 @@ body:
       required: true
 
 
+  - type: dropdown
+    id: url_nsfw
+    attributes:
+      label: Is this site contains sexually explicit material?
+      multiple: false
+      options:
+        - YES
+        - NO
+    validations:
+      required: true
+
 
 
   - type: textarea
