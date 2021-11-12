@@ -201,3 +201,13 @@ body:
         - Hide your User-Agent (specify in comment below, if used custom value)
         - Hide your IP address (specify in comment below, if used custom value)
 
+
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: privacy
+      description: By submitting this issue, you agree that report does not contain private info
+      options:
+        - label: I agree to follow this condition
+          required: true
