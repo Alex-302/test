@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["label_1", "label_N"]
+labels: ["A: Bug", "A: By Design", "A: Cannot reproduce", "A: Closed", "A: In progress", "A: Invalid", "A: Problematic", "A: Rejected", "A: Resolved", "A: Won't fix", "Extra", "Extra (zmc)", "Infrastructure", "N: AdGuard Browser Extension", "N: AdGuard Content Blocker", "N: AdGuard DNS", "N: AdGuard for Android", "N: AdGuard for iOS", "N: AdGuard for Mac", "N: AdGuard for Safari", "N: AdGuard for Windows", "N: Other", "NSFW", "P1: Critical", "P2: High", "P3: Medium", "P4: Low", "T: Ads", "T: Annoyance", "T: Anti Adblock Script", "T: Incorrect Blocking", "T: Popups", "T: Social Widget", "T: Stealth Mode issue", "T: Tracker"]
 body:
   - type: dropdown
     id: adguards
@@ -30,15 +30,15 @@ body:
     id: what-happened
     attributes:
       label: What type of problem have you encountered?
-      description: Also tell us, what did you expect to happen?
       multiple: true
       options:
-        - Social media buttons — share, like, tweet, etc.
         - Missed ads or ad leftovers
         - Website or app doesn't work properly with enabled AdGuard
         - AdGuard gets detected on a website
+        - Social media buttons — share, like, tweet, etc.
         - Annoyances — pop-ups, cookie warnings, other notifications
- 
+        - Missed analytics or tracker;
+        - Dangerous site
   - type: dropdown
     id: browsers
     attributes:
