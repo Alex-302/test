@@ -201,12 +201,7 @@ body:
         - Hide your User-Agent (specify in comment below, if used custom value)
         - Hide your IP address (specify in comment below, if used custom value)
 
-  - type: textarea
-    id: comment
-    attributes:
-      label: Add your comment
-      placeholder: Please describe the issue extensively unless it is absolutely clear from the screenshot what the problem is. You can also indicate any other information that you think the developers should know.
-    render: shell
+
 
   - type: checkboxes
     id: terms
