@@ -236,7 +236,6 @@ body:
         You can also indicate any other information that you think the developers should know.
 
         Warning: Please remove private info before upload screenshots!
-      render: shell
       placeholder: |
         1. Your comment
         2. Screenshots
