@@ -189,7 +189,6 @@ body:
       description: Please mark any of these options if you have them enabled in Stealth Mode
       multiple: true
       options:
-        - none
         - Hide your search queries
         - Send Do-Not-Track header
         - Remove X-Client-Data header from HTTP requests
@@ -202,8 +201,6 @@ body:
         - Hide your Referrer from third-parties (specify in comment below, if used custom value)
         - Hide your User-Agent (specify in comment below, if used custom value)
         - Hide your IP address (specify in comment below, if used custom value)
-    validations:
-      required: true
 
   - type: textarea
     id: comment
