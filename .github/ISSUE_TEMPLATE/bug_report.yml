@@ -213,12 +213,8 @@ body:
     attributes:
       label: Add your comment
       description: |
-        Please describe the issue extensively unless it is absolutely clear from the screenshot what the problem is.
-        You can also indicate any other information that you think the developers should know.
-        Warning: Please remove private info before upload screenshots!
-        
-        Tip: You can attach images by clicking this area to highlight it and then dragging files in or paste images from clipboard.
-    render: shell
+        Please
+      render: shell
     validations:
       required: true
 
