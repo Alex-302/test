@@ -8,7 +8,7 @@ body:
     attributes:
       label: Prerequisites
       description: |
-        To avoid invalid reports, check and confirm following checkboxes.
+        To avoid invalid reports, please check and confirm following checkboxes.
         It is highly recommended to use our [Web Reporting Tool](https://kb.adguard.com/en/technical-support/reporting-tool) instead or opening an issue using GitHub directly.
       options:
         - label: Filters were updated before redroduced an issue;
@@ -228,9 +228,9 @@ body:
   - type: textarea
     id: comment
     attributes:
-      label: Add your comment
+      label: TEST
       description: Please describe the issue extensively unless it is absolutely clear from the screenshot what the problem is. You can also indicate any other information that you think the developers should know.
-      render: shell
+      render: markdown
 
   - type: textarea
     id: comments
