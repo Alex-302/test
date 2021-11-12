@@ -18,6 +18,8 @@ body:
         - AdGuard for Safari
         - AdGuard for Windows
         - Other ad blocker
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
@@ -39,6 +41,8 @@ body:
         - Annoyances — pop-ups, cookie warnings, etc.
         - Missed analytics or tracker
         - Dangerous site
+    validations:
+      required: true
   - type: dropdown
     id: browsers
     attributes:
@@ -51,6 +55,9 @@ body:
         - Microsoft Edge
         - Opera
         - Yandex Browser
+        - other(specify in comment below)
+    validations:
+      required: true
   - type: dropdown
     id: browsers_type
     attributes:
@@ -77,8 +84,8 @@ body:
       label: Is this site contains sexually explicit material?
       multiple: false
       options:
-        - YES1
-        - NO1
+        - Negative
+        - Site is NSFW
     validations:
       required: true
 
