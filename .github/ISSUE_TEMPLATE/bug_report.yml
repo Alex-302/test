@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a bug report
 # title: "[Bug]: "
-labels: ["A: Invalid"]
+labels: ["N: Other"]
 # labels: ["A: Bug", "A: By Design", "A: Cannot reproduce", "A: Closed", "A: In progress", "A: Invalid", "A: Problematic", "A: Rejected", "A: Resolved", "A: Won't fix", "Extra", "Extra (zmc)", "Infrastructure", "N: AdGuard Browser Extension", "N: AdGuard Content Blocker", "N: AdGuard DNS", "N: AdGuard for Android", "N: AdGuard for iOS", "N: AdGuard for Mac", "N: AdGuard for Safari", "N: AdGuard for Windows", "N: Other", "NSFW", "P1: Critical", "P2: High", "P3: Medium", "P4: Low", "T: Ads", "T: Annoyance", "T: Anti Adblock Script", "T: Incorrect Blocking", "T: Popups", "T: Social Widget", "T: Stealth Mode issue", "T: Tracker"]
 body:
   - type: checkboxes
@@ -11,6 +11,8 @@ body:
         To avoid invalid reports, please check and confirm following checkboxes.
         It is highly recommended to use our [Web Reporting Tool](https://kb.adguard.com/en/technical-support/reporting-tool) instead or opening an issue using GitHub directly.
       options:
+        - label: This site DOES NOT contains sexually explicit material;
+          required: true
         - label: Filters were updated before redroduced an issue;
           required: true
         - label: AdGuard product version is up-to-date;
@@ -97,17 +99,6 @@ body:
       label: Where did you encounter the problem?
       description: Please enter address of the page or download link of the affected app.
       placeholder: ex. https://example.com/
-    validations:
-      required: true
-
-  - type: dropdown
-    id: url_nsfw
-    attributes:
-      label: Is this site contains sexually explicit material?
-      multiple: false
-      options:
-        - Negative
-        - Site is NSFW
     validations:
       required: true
 
