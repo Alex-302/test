@@ -95,7 +95,7 @@ body:
       description: Select enabled filters from the list or enter URLs of any custom filters in comment below.
       multiple: false
       options:
-        - ### AdGuard filters ###
+        - AdGuard filters
         - AdGuard Russian filter
         - AdGuard Base filter
         - AdGuard Tracking Protection filter
@@ -112,7 +112,7 @@ body:
         - AdGuard DNS filter
         - AdGuard French filter
         - AdGuard URL Tracking filter
-        - ### Third-party filters ###
+        - Third-party filters
         - EasyList
         - ABPindo
         - Bulgarian list
