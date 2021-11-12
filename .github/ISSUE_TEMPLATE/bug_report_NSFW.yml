@@ -229,8 +229,17 @@ body:
       placeholder: |
         1. Your comment
         2. Screenshots
-        <details> paste screenshot here </details>
-        <details> paste screenshot here </details>
+        <details> 
+        
+        paste screenshot here
+        
+        </details>
+        
+        <details>
+        
+        paste screenshot here
+        
+        </details>
     validations:
       required: true
 
