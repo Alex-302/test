@@ -32,7 +32,7 @@ body:
     id: what-happened
     attributes:
       label: What type of problem have you encountered?
-      description: Please describe what happened.
+      description: If the problem does not fall under any category that is listed here, please contact our tech support - support@adguard.com
       multiple: true
       options:
         - Missed ads or ad leftovers
