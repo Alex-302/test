@@ -205,9 +205,11 @@ body:
     id: comment
     attributes:
       label: Add your comment
-      placeholder: |
-      Please describe the issue extensively unless it is absolutely clear from the screenshot what the problem is. 
-      You can also indicate any other information that you think the developers should know.
+    placeholder: |
+      1. In this environment...
+      2. With this config...
+      3. Run '...'
+      4. See error...
     render: shell
 
   - type: checkboxes
