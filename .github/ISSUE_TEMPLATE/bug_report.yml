@@ -218,7 +218,7 @@ body:
         Warning: Please remove private info before upload screenshots!
         
         Tip: You can attach images by clicking this area to highlight it and then dragging files in or paste images from clipboard.
-      render: shell
+    render: shell
     validations:
       required: true
 
