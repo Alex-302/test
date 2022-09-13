@@ -119,6 +119,19 @@ body:
       placeholder: |
         * ex. AdGuard DNS filter
         * ex. https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+        1. Your comment
+        2. Screenshots
+        <details> 
+        
+        paste screenshot here
+        
+        </details>
+        
+        <details>
+        
+        paste screenshot here
+        
+        </details>
     validations:
       required: true
 
