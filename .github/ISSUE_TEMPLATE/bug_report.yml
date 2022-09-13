@@ -1,7 +1,6 @@
 name: Bug Report
 description: File a bug report
-# title: "[Bug]: "
-labels: ["N: Other"]
+labels: ["A: Bug"]
 # labels: ["A: Bug", "A: By Design", "A: Cannot reproduce", "A: Closed", "A: In progress", "A: Invalid", "A: Problematic", "A: Rejected", "A: Resolved", "A: Won't fix", "Extra", "Extra (zmc)", "Infrastructure", "N: AdGuard Browser Extension", "N: AdGuard Content Blocker", "N: AdGuard DNS", "N: AdGuard for Android", "N: AdGuard for iOS", "N: AdGuard for Mac", "N: AdGuard for Safari", "N: AdGuard for Windows", "N: Other", "NSFW", "P1: Critical", "P2: High", "P3: Medium", "P4: Low", "T: Ads", "T: Annoyance", "T: Anti Adblock Script", "T: Incorrect Blocking", "T: Popups", "T: Social Widget", "T: Stealth Mode issue", "T: Tracker"]
 body:
   - type: checkboxes
@@ -9,27 +8,40 @@ body:
       label: Prerequisites
       description: |
         To avoid invalid reports, please check and confirm following checkboxes.
-        It is highly recommended to use our [Web Reporting Tool](https://kb.adguard.com/en/technical-support/reporting-tool) instead or opening an issue using GitHub directly.
       options:
         - label: This site DOES NOT contains sexually explicit material;
           required: true
         - label: Filters were updated before redroduced an issue;
-          required: true
+          required: false
         - label: AdGuard product version is up-to-date;
-          required: true
+          required: false
         - label: Browser version is up-to-date;
-          required: true
+          required: false
         - label: If the site or app is broken, disabling AdGuard protection resolves an issue.
           required: true
+
+  - type: dropdown
+    id: adguard-dns
+    attributes:
+      label: What DNS-related product do you use?
+      multiple: true
+      options:
+        - AdGuard public DNS
+        - AdGuard private DNS
+        - AdGuard Home
+    validations:
+      required: true
+
   - type: dropdown
     id: adguards
     attributes:
-      label: What product do you use?
+      label: What ad blocker do you use?
+      description: If you use an ad blocker, please specify its version in the next step
       multiple: true
       options:
+        - DNS only
         - AdGuard Browser Extension
         - AdGuard Content Blocker
-        - AdGuard DNS
         - AdGuard for Android
         - AdGuard for iOS
         - AdGuard for Mac
@@ -46,7 +58,7 @@ body:
       description: What version of our software are you running?
       placeholder: ex. 7.7
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: what-happened
@@ -55,20 +67,16 @@ body:
       description: If the problem does not fall under any category that is listed here, please contact our tech support - support@adguard.com
       multiple: true
       options:
-        - Missed ads or ad leftovers
-        - Website or app doesn't work properly
-        - AdGuard gets detected on a website
-        - Social media buttons — share, like, tweet, etc.
-        - Annoyances — pop-ups, cookie warnings, etc.
+        - Missed ads
         - Missed analytics or tracker
-        - Dangerous site
+        - Website or app doesn't work properly
     validations:
       required: true
 
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers is used?
+      label: What browser is used?
       multiple: true
       options:
         - Firefox
@@ -78,7 +86,7 @@ body:
         - Opera
         - Yandex Browser
         - other(specify in comment below)
-        - the problem is with app, not a site
+        - the problem is with app or device
     validations:
       required: true
 
@@ -90,6 +98,7 @@ body:
       options:
         - Desktop
         - Mobile
+        - Other device
     validations:
       required: true
 
@@ -100,121 +109,17 @@ body:
       description: Please enter address of the page or download link of the affected app.
       placeholder: ex. https://example.com/
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: filters
     attributes:
-      label: What filters do you have enabled?
-      description: Select enabled filters from the list or enter URLs of any custom filters in comment below.
-      multiple: true
-      options:
-        - ---AdGuard filters---
-        - AdGuard Base filter
-        - AdGuard Mobile Ads filter
-        - AdGuard Dutch filter
-        - AdGuard French filter
-        - AdGuard German filter
-        - AdGuard Japanese filter
-        - AdGuard Russian filter
-        - AdGuard Spanish/Portuguese filter
-        - AdGuard Turkish filter
-        - AdGuard Tracking Protection filter
-        - AdGuard URL Tracking filter
-        - AdGuard Social Media filter
-        - AdGuard Annoyances filter
-        - AdGuard DNS filter
-        - AdGuard Experimental filter
-        - Filter unblocking search ads and self-promotion
-        - ---Third-party filters---
-        - EasyList
-        - ABPindo
-        - Bulgarian list
-        - EasyList China
-        - EasyList Czech and Slovak
-        - EasyList Dutch
-        - EasyList Germany
-        - EasyList Hebrew
-        - EasyList Italy
-        - EasyList Lithuania
-        - Latvian List
-        - Liste AR
-        - Liste FR
-        - ROList
-        - EasyPrivacy
-        - Icelandic ABP List
-        - AdBlockID
-        - Greek AdBlock Filter
-        - Fanboy's Annoyances
-        - Fanboy's Social Blocking List
-        - Web Annoyances Ultralist
-        - Thai Ads Filters
-        - Hungarian filter
-        - Peter Lowe's Blocklist
-        - Xfiles
-        - Adblock Warning Removal List
-        - Online Malicious URL Blocklist
-        - Spam404
-        - RU AdList - Counters
-        - ABPVN List
-        - Fanboy's Enhanced Tracking List
-        - Official Polish filters for AdBlock, uBlock Origin & AdGuard
-        - Polish GDPR-Cookies Filters
-        - Estonian List
-        - ChinaList+EasyList
-        - CJX's Annoyances List
-        - Polish Social Filters
-        - Adblock-Persian list
-        - Fanboy's Swedish
-        - AdGuard Chinese filter
-        - Fanboy's Anti-Facebook List
-        - Fanboy's Vietnamese
-        - List-KR
-        - xinggsf
-        - I don't care about cookies
-        - Fanboy's Spanish\/Portuguese
-        - EasyList Spanish
-        - KAD - Anti-Scam
-        - Adblock List for Finland
-        - ROLIST2
-        - Iranian filter
-        - road-block
-        - Polish Annoyances Filters
-        - Polish Anti Adblock Filters
-        - Fanboy's Anti-thirdparty Fonts
-        - BarbBlock
-        - EasyList Cookie List
-        - NoCoin Filter List
-        - Frellwit's Swedish Filter
-        - YousList
-        - AlleBlock
-        - EasyList Polish
-        - Polish Anti-Annoying Special Supplement
-        - Dandelion Sprout's Nordic Filters
-        - Dandelion Sprout's Annoyances List
-        - Legitimate URL Shortener
+      label: What DNS filters do you have enabled?
+      description: Give a list of enabled DNS filters in the field below.
+      placeholder: |
+      
     validations:
       required: true
-
-  - type: dropdown
-    id: stealth
-    attributes:
-      label: What Stealth Mode options do you have enabled?
-      description: Please mark any of these options if you have them enabled in Stealth Mode
-      multiple: true
-      options:
-        - Hide your search queries
-        - Send Do-Not-Track header
-        - Remove X-Client-Data header from HTTP requests
-        - Self-destruction of first-party cookies
-        - Self-destruction of third-party cookies
-        - Disable cache for third-party requests
-        - Block WebRTC
-        - Block Push API
-        - Block Location API
-        - Hide your Referrer from third-parties (specify in comment below, if used custom value)
-        - Hide your User-Agent (specify in comment below, if used custom value)
-        - Hide your IP address (specify in comment below, if used custom value)
 
   - type: textarea
     id: comments
