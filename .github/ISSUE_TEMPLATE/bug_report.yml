@@ -117,8 +117,8 @@ body:
       label: What DNS filters do you have enabled?
       description: Give a list of enabled DNS filters in the field below.
       placeholder: |
-        ex. AdGuard DNS filter
-        ex. https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+        * ex. AdGuard DNS filter
+        * ex. https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
     validations:
       required: true
 
