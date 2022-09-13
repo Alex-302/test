@@ -85,8 +85,8 @@ body:
         - Microsoft Edge
         - Opera
         - Yandex Browser
-        - other(specify in comment below)
-        - the problem is with app or device
+        - Other(specify in comment below)
+        - A problem is with an app or a device
     validations:
       required: true
 
@@ -158,5 +158,4 @@ body:
       options:
         - label: I agree to follow this condition
           required: true
-
 
