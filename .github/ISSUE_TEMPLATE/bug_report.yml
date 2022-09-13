@@ -85,8 +85,8 @@ body:
         - Microsoft Edge
         - Opera
         - Yandex Browser
-        - other(specify in comment below)
-        - the problem is with app or device
+        - Other(specify in comment below)
+        - A problem is with an app or a device
     validations:
       required: true
 
@@ -111,16 +111,27 @@ body:
     validations:
       required: false
 
-  - type: input
+  - type: textarea
     id: filters
     attributes:
       label: What DNS filters do you have enabled?
       description: Give a list of enabled DNS filters in the field below.
       placeholder: |
-        ex. AdGuard DNS filter
-        ex. https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+        * ex. AdGuard DNS filter
+        * ex. https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
     validations:
       required: true
+  
+  - type: textarea
+    id: dns-upstreams
+    attributes:
+      label: What DNS upstream(s) do you use in AdGuard apps or AdGuard Home?
+      description: Give a list of public DNS upstreams in the field below.
+      placeholder: |
+        * ex. 94.140.14.140 - AdGuard non-filtered DNS
+        * ex. tls://unfiltered.adguard-dns.com - AdGuard non-filtered DNS over TLS
+    validations:
+      required: false
 
   - type: textarea
     id: comments
