@@ -157,14 +157,3 @@ body:
         </details>
     validations:
       required: true
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Privacy
-      description: By submitting this issue, you agree that report does not contain private info
-      options:
-        - label: I agree to follow this condition
-          required: true
-          
-  
