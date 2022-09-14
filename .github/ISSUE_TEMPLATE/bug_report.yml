@@ -67,19 +67,6 @@ body:
       required: true
 
   - type: dropdown
-    id: what-happened
-    attributes:
-      label: What type of problem have you encountered?
-      description: If the problem does not fall under any category that is listed here, please contact our tech support - support@adguard.com
-      multiple: true
-      options:
-        - Missed ads
-        - Missed analytics or tracker
-        - Website or app doesn't work properly
-    validations:
-      required: true
-
-  - type: dropdown
     id: browsers
     attributes:
       label: What browser is used?
@@ -106,6 +93,19 @@ body:
         - Desktop
         - Mobile
         - Other device
+    validations:
+      required: true
+
+  - type: dropdown
+    id: what-happened
+    attributes:
+      label: What type of problem have you encountered?
+      description: If the problem does not fall under any category that is listed here, please contact our tech support - support@adguard.com
+      multiple: true
+      options:
+        - Missed ads
+        - Missed analytics or tracker
+        - Website or app doesn't work properly
     validations:
       required: true
 
