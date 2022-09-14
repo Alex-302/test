@@ -20,3 +20,18 @@ body:
         - label: If the site or app is broken, disabling AdGuard DNS resolves an issue.
           required: true
 
+  - type: dropdown
+    id: adguard-dns
+    # NOTE: what adguard dns product
+    attributes:
+      label: What DNS server do you use?
+      description: |
+        If used third-party product, select Other and add its name in the comment field below.
+      multiple: true
+      options:
+        - AdGuard public DNS
+        - AdGuard private DNS
+        - AdGuard Home
+        - Other
+    validations:
+      required: true
