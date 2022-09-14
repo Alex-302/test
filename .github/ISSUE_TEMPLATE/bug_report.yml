@@ -5,7 +5,6 @@ body:
   - type: checkboxes
     attributes:
       label: Prerequisites
-      # NOTE: Prerequisites
       description: |
         To avoid invalid reports, please check and confirm following checkboxes.
       options:
@@ -22,7 +21,6 @@ body:
 
   - type: dropdown
     id: adguard-dns
-    # NOTE: what adguard dns product
     attributes:
       label: What DNS server do you use?
       description: |
@@ -38,7 +36,6 @@ body:
 
   - type: input
     id: version
-    # NOTE: ag server version
     attributes:
       label: AdGuard or other DNS server version
       description: What version of software are you running?
@@ -49,7 +46,6 @@ body:
 
   - type: textarea
     id: dns-upstreams
-    # NOTE: upstreams
     attributes:
       label: What DNS upstream(s) do you use in AdGuard apps or AdGuard Home?
       description: |
@@ -61,7 +57,6 @@ body:
 
   - type: textarea
     id: filters
-    # NOTE: dns filters
     attributes:
       label: What DNS filters do you have enabled?
       description: Give a list of enabled DNS filters in the field below if any are used.
@@ -73,7 +68,6 @@ body:
 
   - type: dropdown
     id: what-happened
-    # NOTE: what happened
     attributes:
       label: What type of problem have you encountered?
       description: If the problem does not fall under any category that is listed here, please contact our tech support - support@adguard.com
@@ -87,7 +81,6 @@ body:
 
   - type: dropdown
     id: browsers
-    # NOTE: browser
     attributes:
       label: What browser is used?
       multiple: true
@@ -104,7 +97,6 @@ body:
 
   - type: dropdown
     id: device_type
-    # NOTE: browser type
     attributes:
       label: Which device type is used?
       description: |
@@ -119,7 +111,6 @@ body:
 
   - type: input
     id: url
-    # NOTE: url of problem
     attributes:
       label: Where did you encounter the problem?
       description: |
@@ -165,5 +156,3 @@ body:
       options:
         - label: I agree to follow this condition
           required: true
-          
-  
