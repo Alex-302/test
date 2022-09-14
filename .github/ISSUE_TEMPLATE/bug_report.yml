@@ -117,4 +117,17 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: url
+    # NOTE: url of problem
+    attributes:
+      label: Where did you encounter the problem?
+      description: |
+        Please enter the page address or a download link of the affected app.
+        If the problem with other device, please write a comment below
+      placeholder: ex. https://example.com/
+    validations:
+      required: false
 
+
+  
