@@ -129,33 +129,7 @@ body:
     validations:
       required: false
 
-- type: textarea
-    id: comments
-    attributes:
-      label: Add your comment and screenshots
-      description: |
-        1. Please add screenshots of the problem. You can attach images by clicking this area to highlight it and then dragging files in or paste images from clipboard;
-           Use `<details> </details>` tag to hide screenshots under the spoiler; 
-        2. Please describe the issue extensively unless it is absolutely clear from the screenshot what the problem is;
-        You can also indicate any other information that you think the developers should know.
 
-        Warning: Please remove private info before upload screenshots!
-      placeholder: |
-        1. Your comment
-        2. Screenshots
-        <details> 
-        
-        paste screenshot here
-        
-        </details>
-        
-        <details>
-        
-        paste screenshot here
-        
-        </details>
-    validations:
-      required: true
 
   - type: checkboxes
     id: terms
