@@ -35,3 +35,14 @@ body:
         - Other
     validations:
       required: true
+
+  - type: input
+    id: version
+    # NOTE: ag server version
+    attributes:
+      label: AdGuard or other DNS server version
+      description: What version of software are you running?
+      placeholder: |
+        ex. AdGuard Home v0.108.0-a.273+782de99a
+    validations:
+      required: false
