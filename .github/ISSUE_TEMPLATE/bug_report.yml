@@ -102,4 +102,19 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: device_type
+    # NOTE: browser type
+    attributes:
+      label: Which device type is used?
+      description: |
+        If the problem with other device, please write a comment below
+      multiple: false
+      options:
+        - Desktop
+        - Mobile
+        - Other device
+    validations:
+      required: true
+
 
