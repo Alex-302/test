@@ -58,3 +58,15 @@ body:
         * ex. tls://unfiltered.adguard-dns.com - AdGuard non-filtered DNS over TLS
     validations:
       required: false
+
+  - type: textarea
+    id: filters
+    # NOTE: dns filters
+    attributes:
+      label: What DNS filters do you have enabled?
+      description: Give a list of enabled DNS filters in the field below if any are used.
+      placeholder: |
+        * ex. AdGuard DNS filter
+        * ex. https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+    validations:
+      required: true
