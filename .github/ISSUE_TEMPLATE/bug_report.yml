@@ -98,7 +98,8 @@ body:
         - Microsoft Edge
         - Opera
         - Yandex Browser
-        - Other (specify in comment below)
-        - A problem is with an app or a device
+        - Other app
     validations:
       required: true
+
+
