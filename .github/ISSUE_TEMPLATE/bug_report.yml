@@ -36,7 +36,7 @@ body:
     validations:
       required: true
 
-   - type: input
+  - type: input
     id: version
     # NOTE: ag server version
     attributes:
@@ -104,8 +104,8 @@ body:
       required: true
 
   - type: dropdown
-  # NOTE: browser type
     id: device_type
+    # NOTE: browser type
     attributes:
       label: Which device type is used?
       multiple: false
@@ -165,3 +165,4 @@ body:
       options:
         - label: I agree to follow this condition
           required: true
+          
