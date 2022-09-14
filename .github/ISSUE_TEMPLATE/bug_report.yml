@@ -84,3 +84,21 @@ body:
         - Website or app doesn't work properly
     validations:
       required: true
+
+  - type: dropdown
+    id: browsers
+    # NOTE: browser
+    attributes:
+      label: What browser is used?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Opera
+        - Yandex Browser
+        - Other (specify in comment below)
+        - A problem is with an app or a device
+    validations:
+      required: true
